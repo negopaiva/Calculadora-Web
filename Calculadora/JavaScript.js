@@ -1,5 +1,5 @@
 function insert(Num){
-   var Numero = document.getElementById('Result').innerHTML ;
+   const Numero = document.getElementById('Result').innerHTML ;
     document.getElementById('Result').innerHTML = Numero + Num; 
 }
 
@@ -10,14 +10,14 @@ function Clear(){
 }
 
 function Back(){
-    var Resultado = document.getElementById('Result').innerHTML;
+    const Resultado = document.getElementById('Result').innerHTML;
     document.getElementById('Result').innerHTML = Resultado.substring(0, Resultado.length -1);
 }
 
 
 function Calcular(){
 
-    var Resultado = document.getElementById('Result').innerHTML;
+    const Resultado = document.getElementById('Result').innerHTML;
     if(Resultado){
         document.getElementById('Result').innerHTML = eval(Resultado);
     }
